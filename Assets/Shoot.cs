@@ -16,9 +16,14 @@ public class Shoot : MonoBehaviour {
 		if(Input.GetButtonDown("Fire1"))
         {
             Vector3 start = transform.position;
-            start += transform.forward.normalized * 10;
+            start += transform.forward.normalized * 5;
             GameObject newObj = Instantiate<GameObject>(ThingToShoot, start, transform.rotation);
             newObj.GetComponent<Rigidbody>().velocity = transform.forward.normalized * 30;
+
+            Transform gun = transform.Find("gun");
+            Animation gunAnimation = gun.GetComponent<Animation>();
+            gunAnimation.Stop();
+            gunAnimation.Play();
         }
 	}
 }
