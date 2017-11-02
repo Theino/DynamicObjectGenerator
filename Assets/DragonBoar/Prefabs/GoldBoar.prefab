@@ -1495,5 +1495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f121739b20620684c94c9906507b7e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsBad: 0
-  Player: {fileID: 0}
+  IsBad: 1
+  Player: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  ScoreText: {fileID: 100004, guid: b1a5e04ae51004842aba06704a6c2903, type: 3}

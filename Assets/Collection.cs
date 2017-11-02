@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Collection : MonoBehaviour {
 
     public bool IsBad = false;
 
     public GameObject Player;
+    public GameObject ScoreText;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +26,7 @@ public class Collection : MonoBehaviour {
         {
             if(IsBad)
             {
-
+                ScoreText.GetComponent<Text>().text += "+";
             }
         }
     }
