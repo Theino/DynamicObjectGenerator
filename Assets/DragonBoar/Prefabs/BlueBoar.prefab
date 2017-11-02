@@ -25,9 +25,9 @@ GameObject:
   - component: {fileID: 484804}
   - component: {fileID: 9593104}
   - component: {fileID: 11492726}
-  - component: {fileID: 54131730799481564}
-  - component: {fileID: 65322992467883734}
-  - component: {fileID: 82502193488596486}
+  - component: {fileID: 54485809414563858}
+  - component: {fileID: 65392032381945356}
+  - component: {fileID: 82614856455124388}
   m_Layer: 0
   m_Name: BlueBoar
   m_TagString: Untagged
@@ -787,7 +787,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121582}
-  m_LocalRotation: {x: 0.6163759, y: -0.0059622503, z: 0.78739256, w: 0.007616508}
+  m_LocalRotation: {x: 0.616376, y: -0.005962251, z: 0.7873927, w: 0.0076165088}
   m_LocalPosition: {x: -41.618374, y: 1.4210855e-14, z: 1.4210855e-14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1376,7 +1376,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 113038}
   m_IsPrefabParent: 1
---- !u!54 &54131730799481564
+--- !u!54 &54485809414563858
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1390,8 +1390,8 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
---- !u!65 &65322992467883734
+  m_CollisionDetection: 0
+--- !u!65 &65392032381945356
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1403,7 +1403,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 3, z: 8}
   m_Center: {x: 0, y: 1.5, z: 0}
---- !u!82 &82502193488596486
+--- !u!82 &82614856455124388
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
