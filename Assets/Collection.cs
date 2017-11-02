@@ -6,10 +6,7 @@ using UnityEngine.UI;
 public class Collection : MonoBehaviour {
 
     public bool IsBad = false;
-
-    public GameObject Player;
-    public GameObject ScoreText;
-
+    
 	// Use this for initialization
 	void Start () {
 		
@@ -20,14 +17,5 @@ public class Collection : MonoBehaviour {
 		
 	}
 
-    public void HandleCollision(GameObject collidedObject)
-    {
-        if(collidedObject == Player)
-        {
-            if(IsBad)
-            {
-                ScoreText.GetComponent<Text>().text += "+";
-            }
-        }
-    }
+    
 }

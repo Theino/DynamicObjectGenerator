@@ -29,6 +29,9 @@ GameObject:
   - component: {fileID: 65392032381945356}
   - component: {fileID: 82614856455124388}
   - component: {fileID: 114929148721396396}
+  - component: {fileID: 65981406845944270}
+  - component: {fileID: 114005747459320408}
+  - component: {fileID: 195326657929288892}
   m_Layer: 0
   m_Name: BlueBoar
   m_TagString: Untagged
@@ -1404,6 +1407,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 3, z: 8}
   m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!65 &65981406845944270
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1, y: 3.1, z: 8.1}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!82 &82614856455124388
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1484,6 +1499,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114005747459320408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c625f3431957614daec0b2bab776d03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xMin: 100
+  xMax: 400
+  zMin: 100
+  zMax: 400
 --- !u!114 &114929148721396396
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1496,5 +1526,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBad: 0
-  Player: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-  ScoreText: {fileID: 100004, guid: b1a5e04ae51004842aba06704a6c2903, type: 3}
+--- !u!195 &195326657929288892
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113038}
+  m_Enabled: 0
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 10
+  m_Acceleration: 5
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 0
