@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 54607469892368414}
   - component: {fileID: 65989608224407378}
   - component: {fileID: 82961989445165896}
+  - component: {fileID: 114790093160395726}
   m_Layer: 0
   m_Name: GreenBoar
   m_TagString: Untagged
@@ -1483,3 +1484,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114790093160395726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f121739b20620684c94c9906507b7e0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsBad: 0
+  Player: {fileID: 0}

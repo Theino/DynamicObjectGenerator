@@ -6,6 +6,8 @@ public class Collection : MonoBehaviour {
 
     public bool IsBad = false;
 
+    public GameObject Player;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,4 +17,15 @@ public class Collection : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void HandleCollision(GameObject collidedObject)
+    {
+        if(collidedObject == Player)
+        {
+            if(IsBad)
+            {
+
+            }
+        }
+    }
 }
