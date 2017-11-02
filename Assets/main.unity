@@ -127,7 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e56b6352532ca034aae7e9942b104062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThingToShoot: {fileID: 113038, guid: 907325ec940ecbf409d1505976f5fcd5, type: 2}
+  ThingsToShoot:
+  - {fileID: 113038, guid: 907325ec940ecbf409d1505976f5fcd5, type: 2}
 --- !u!1 &1014646344
 GameObject:
   m_ObjectHideFlags: 0

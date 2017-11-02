@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour {
 
-    public GameObject ThingToShoot;
+    public GameObject[] ThingsToShoot;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    private System.Random rand;
+    // Use this for initialization
+    void Start () {
+        rand = new System.Random();
+    }
 	
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetButtonDown("Fire1"))
         {
+            int randNum = rand.Next(0, ThingsToShoot.Length);
             Vector3 start = transform.position;
             start += transform.forward.normalized * 5;
-            GameObject newObj = Instantiate<GameObject>(ThingToShoot, start, transform.rotation);
+            GameObject newObj = Instantiate<GameObject>(ThingsToShoot[randNum], start, transform.rotation);
             newObj.GetComponent<Rigidbody>().velocity = transform.forward.normalized * 30;
 
             Transform gun = transform.Find("gun");
